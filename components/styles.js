@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
       alignContent:'center'
     },
     title:{
-      fontSize:20,
+      fontSize:40,
     },
     warning:{
-      color:'blue'
+      color:'red'
     }
   });
   
