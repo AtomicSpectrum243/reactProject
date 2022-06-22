@@ -1,19 +1,15 @@
 import { StyleSheet, View, Text } from 'react-native'
 import React from 'react'
+import Logo from './components/Logo';
+import styles from './components/styles';
 
-const Logo = () => {
+const App = () => {
   return (
-    <View>
-      <Text style={StyleSheet.textLogo}>TNI</Text>
+    <View style={styles.container}>
+      <Text style={[styles.title,styles.warning]}>Hello React Native</Text>
+      <Logo/>
     </View>
   )
 }
 
-export default Logo
-
-const styles = StyleSheet.create({
-    TextLogo : {
-        color: "red",
-        fontSize : 40
-    }
-})
+export default App
