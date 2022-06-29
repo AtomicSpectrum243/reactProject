@@ -1,17 +1,26 @@
-import { StyleSheet, View, TextInput } from 'react-native'
-import React from 'react'
-import styles from './components/stySheet';
-import TextInputExample from './components/TextInputExample'
-import Cat from './components/Cat';
+import { View, Text, StyleSheet, Button } from "react-native";
+import React from "react";
 
-const App = () => {
+export default function App() {
+  const showData = () => {
+    alert("Hello")
+  }
   return (
-    <View style={styles.container}>
-      {/* <Text style={[styles.title]}>React Native</Text> */}
-      {/* <TextInputExample/> */}
-      <Cat/>
+    <View style = {StyleSheet.container}>
+      <Text>Button Example</Text>
+      <Button
+      color = 'purple'
+      onPress = {showData}
+      title = 'click me'
+      />
     </View>
   )
 }
 
-export default App
+const styles = StyleSheet.create({
+  container : {
+    flex : 1,
+    alignItems : 'center',
+    justifyContent : 'center'
+  }
+})
