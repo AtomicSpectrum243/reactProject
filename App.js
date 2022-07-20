@@ -1,23 +1,18 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, style } from 'react-native'
 import React from 'react'
-import UserNamePassword from './components/UserNamePassword'
+// import UserNamePassword from './components/UserNamePassword'
+// import AlertComponents from './components/AlertComponents'
+// import ImageWithTextInput from './components/ImageWithTextInput'
+import ButtonExample from './components/ButtonExample'
+import TouchableEx from './components/TouchableEx'
 
 const App = () => {
   return (
-    <view>
-      <UserNamePassword/>
-    </view>
+    <View style={{flex:1}}>
+      <TouchableEx/>
+    </View>
   )
 }
 
-export default App
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "#E6E6FA",
-    height: 500,
-    padding: 10,
-  },
-});
+export default App
