@@ -2,13 +2,13 @@ import { StyleSheet, View, TextInput , Button } from "react-native";
 import React, {useState} from "react";
 
 const UserNamePassword = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setEmail] = useState("");
+  const [email, setPassword] = useState("");
 
     const showAlert = ()=> {
-      if (!email) alert("Please Enter Email");
-      else if (!password) alert("Please Enter Password");
-      else alert(`Email : ${email}\n Password : ${password}`);
+      if (!name) alert("Please Enter Name");
+      else if (!email) alert("Please Enter Email");
+      else alert(`Name : ${name}\n Email : ${email}`);
     }
 
   return (
@@ -23,16 +23,16 @@ const UserNamePassword = () => {
       <View style={styles.container}>
         <TextInput
           style={styles.textInputStyle}
-          placeholder="Enter Email"
-          onChangeText={(email) => setEmail(email)}
-          value={email}
+          placeholder="Enter Name"
+          onChangeText={(name) => setEmail(name)}
+          value={name}
         />
 
         <TextInput
           style={styles.textInputStyle}
-          placeholder="Enter Password"
-          onChangeText={(password) => setPassword(password)}
-          value={password}
+          placeholder="Enter Email"
+          onChangeText={(email) => setPassword(email)}
+          value={email}
         />
 
         <View style={{ marginTop: 15 }}>
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 35,
     width: '100%',
-    backgroundColor: '#FFC0CB',
+    backgroundColor: '#E6E6FA',
     borderRadius: 10,
   },
   textInputStyle: {
