@@ -5,7 +5,7 @@ import React from 'react'
 // import ImageWithTextInput from './components/ImageWithTextInput'
 // import ButtonExample from './components/ButtonExample'
 // import TouchableEx from './components/TouchableEx'
-import TouchablePractice from "./TouchablePractice";
+import TouchablePractice from './components/TouchablePractice'
 const App = () => {
     return (
       <View style={{flex:1}}>
